@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Univers";
+  src: local("Univers");
+  src: url("Fonts/Univers.eot");
+  src: url("Fonts/Univers.woff"), url("Fonts/Univers.woff2"), url("Fonts/Univers.ttf");
+  font-weight: normal;
+  font-style: : normal;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Univers"
+}
+
+/* Header */
+.main{
+  height: 60px;
+  border: 1px solid rgb(191, 191, 191);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* LOGO */
+.main .logo{
+  height: inherit;
+  float: left;
+}
+
+  .logo > i:first-child{
+      color: rgb(199, 0, 12);
+      font-size: 35px;
+      float: left;
+      margin: 5px 10px;
+      line-height: 60px;
+  }
+
+.main .logo > input{
+  display: block;
+  width: 500px;
+  float: left;
+  border: none;
+  height: 30px;
+  margin: 15px;
+}
+
+
+.main > nav{
+  float: right;
+}
+
+.main > nav > ul{
+  list-style: none;
+  float: right;
+
+}
+
+header > nav > ul > li{
+  float: left;
+  line-height: 60px;
+  margin:0px 20px;
+}
+
+section{
+  column-count: 4;
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+section > article{
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+section > article > img{
+  width: 100%;
+  display: block;
+}
+
+section > article > .text{
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  transition: background-color .5s ease-out;
+}
+
+section > article:hover > .text{
+  background-color: rgba(0,0,0,1);
+}
+
+section > article:hover > .text > h1{
+  opacity: 0.5;
+}
